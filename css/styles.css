@@ -1,0 +1,66 @@
+
+* { border-sizing: border-box;}
+
+body {
+	background-color:#000000;
+	width:80%;
+	margin:0 auto;
+}
+header {
+	background-color:green;
+	height:100px;
+}
+nav {
+	background-color: yellow;
+	height:75px;
+}
+.content {
+	background-color:blue;
+	width:75%;
+	height:200px;
+	float:left;
+}
+aside {
+	background-color: red;
+	width:25%;
+	height:200px;
+	float:left;
+}
+.promo {
+	clear:left;
+}
+div {
+	background-color: #939393;
+	width:25%;
+	height:150px;
+	float:left;
+	/*border:1px solid;*/
+}
+footer {
+	clear:left;
+	color:#ffffff;
+	background-color: #ff0080;
+	height: 50px;
+}
+
+/*REORGANIZE WHEN BROWSER IS SMALLER THAN 760PX*/
+@media (max-width: 760px) {
+	.content {
+		width:100%;
+	}
+	aside {
+		width:100%;
+	}
+	.promo1, .promo2 {
+		width:50%;
+	}
+	.promo3, .promo4 {
+		width:50%;
+	}
+}
+/*REORGANIZE WHEN BROWSER IS SMALLER THAN 400PX*/
+@media (max-width:400PX) {
+	.promo1, .promo2, .promo3, .promo3 {
+		width:100%;
+	} 
+}
